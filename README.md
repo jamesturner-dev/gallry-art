@@ -1,4 +1,4 @@
-# JTk cv
+# Gallry.art
 
 - **template of:** vite + vue
 - **tailwindcss:** v3.x
