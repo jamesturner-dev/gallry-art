@@ -1,7 +1,5 @@
 <template>
   <div class="space-y-10">
-
-    <!-- <ContentHeading :content="galInfo" /> -->
     <GalleryLoop :gallery="gallery" />
   </div>
 </template>

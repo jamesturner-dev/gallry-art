@@ -5,12 +5,14 @@
         <div class="flex">
           <!-- Leave in-case of logo -->
           <div>
-            <h1
-              class="text-4xl titleText bg-gradient-to-r from-lime-200 to-yellow-400 dark:from-yellow-200 dark:to-lime-400 bg-clip-text text-transparent">
-              Gallry.Art
-            </h1>
+            <a href="/">
+              <h1
+                class="text-4xl titleText bg-gradient-to-r from-lime-200 to-yellow-400 dark:from-yellow-200 dark:to-lime-400 bg-clip-text text-transparent">
+                Gallry.Art
+              </h1>
+            </a>
             <a class="text-purple-300 dark:text-lime-300 hover:text-white dark:hover:text-white"
-              href="https://github.com/jamesturner-dev/cb">
+              href="https://github.com/jamesturner-dev/gallry-art">
               (<span class="text-xs thinTitle">The Github Repository is Here</span>)
             </a>
           </div>

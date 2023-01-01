@@ -9,7 +9,7 @@
           <h3 class="titleGallry border-b-2 border-b-fuchsia-400 border-opacity-30">
             {{ gallery.name }}
           </h3>
-          <p class="tinyText pr-3 pt-1">{{ gallery.blurb }}</p>
+          <p class="tinyText text-purple-200 dark:text-white pr-3 pt-1">{{ gallery.blurb }}</p>
         </div>
 
       </a>
