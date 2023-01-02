@@ -6,28 +6,42 @@
 
 
 <script setup>
-// import { ref, onMounted } from "vue";
-// import { useRoute } from "vue-router";
-// //
 import GalleryLoop from "./GalleryLoop.vue";
-// import PocketBase from 'pocketbase';
-// import ContentHeading from "../shared/ContentHeading.vue";
+import { ref, onMounted } from "vue";
+import { useRoute } from "vue-router";
+import PocketBase from 'pocketbase';
+
+const route = useRoute();
+const pb = new PocketBase('http://127.0.0.1:8090');
+
+const props = defineProps({
+  id: {
+    type: String,
+    required: true,
+  },
+});
+
+console.log(props.id)
+
+// const galleryImages = ref({})
+
+// const getGalleryImages = async () => {
+//   const apiImages = await pb.collection('imgs').getList(1, 50, {
+//     filter: `gallry="${id.value}"`,
+//   });
+//   galleryImages.value = apiImages;
+//   console.log(galleryImages.value)
+// }
 
 
 
-// const route = useRoute();
-// const galleryName = route.params.name;
+onMounted(async () => {
 
+  // await getGalleryImages().then(() => {
+  //   console.log('done');
+  // });
+});
 
-// const pb = new PocketBase('http://127.0.0.1:8090');
-
-
-// const galleryInfo = ref(await pb.collection("gallry").getFirstListItem(`name="${galleryName}"`));
-
-// galInfo = [
-//   galleryInfo.value.name,
-//   galleryInfo.value.description,
-// ];
 
 
 
