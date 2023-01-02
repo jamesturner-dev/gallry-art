@@ -4,6 +4,7 @@
   <ContentHeading :content="[content.name, content.description]" />
   <div class="grid place-items-center mt-5">
     <main class="mx-auto max-w-max sm:flex">
+
       <TheGallery :id="id" />
     </main>
   </div>
@@ -26,13 +27,12 @@ const getGallery = async () => {
   // https://twitter.com/JamesTurnerDev/status/1609605777848778753
   const galleryInfo = await pb.collection("gallry").getFirstListItem(`name="${route.params.name}"`);
   content.value = galleryInfo;
-  id.value = galleryInfo.collectionId;
-  console.log(content.value);
+  id.value = galleryInfo.id;
 }
 
 onMounted(async () => {
   await getGallery().then(() => {
-    console.log('done');
+    console.log('get gallery done');
   });
 });
 

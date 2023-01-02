@@ -1,17 +1,15 @@
 <template>
   <div class="space-y-10">
     <GalleryLoop :gallery="gallery" />
+    {{ galleryImages.items }}
   </div>
 </template>
-
 
 <script setup>
 import GalleryLoop from "./GalleryLoop.vue";
 import { ref, onMounted } from "vue";
-import { useRoute } from "vue-router";
 import PocketBase from 'pocketbase';
 
-const route = useRoute();
 const pb = new PocketBase('http://127.0.0.1:8090');
 
 const props = defineProps({
@@ -21,29 +19,26 @@ const props = defineProps({
   },
 });
 
-console.log(props.id)
+const galleryImages = ref({})
 
-// const galleryImages = ref({})
-
-// const getGalleryImages = async () => {
-//   const apiImages = await pb.collection('imgs').getList(1, 50, {
-//     filter: `gallry="${id.value}"`,
-//   });
-//   galleryImages.value = apiImages;
-//   console.log(galleryImages.value)
-// }
-
-
+const getGalleryImages = async () => {
+  try {
+    const apiImages = await pb.collection('imgs').getList(1, 50, {
+      filter: `gallry="${props.id}"`,
+    });
+    galleryImages.value = apiImages;
+    console.log(`galleryImages: ${galleryImages.value}`)
+  } catch (err) {
+    console.log(err);
+  }
+}
 
 onMounted(async () => {
 
-  // await getGalleryImages().then(() => {
-  //   console.log('done');
-  // });
+  await getGalleryImages().then(() => {
+    console.log('done');
+  });
 });
-
-
-
 
 const gallery = [
   {
