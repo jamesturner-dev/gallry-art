@@ -1,21 +1,21 @@
 <template>
-  <img class="h-28 mx-auto"
-    src="https://imagedelivery.net/jUv0WjkQAcJxE0kRYIap3Q/38e6afbc-8036-4227-a33e-81ad5db8d100/public" />
-  <h1>
-    <span class="block text-center text-lg font-semibold text-purple-700">
-      {{ content[0] }}
-    </span>
-    <span class="mb-2 block text-center text-3xl font-bold leading-8 tracking-tight text-gray-700">
-      {{ content[1] }}
-    </span>
+  <img class="h-24 mx-auto rounded-full mb-10" :src="avatar" />
+  <h3 class="block text-center">{{ heading.subHeader }} </h3>
+  <h1 class="pb-5 block text-center bg-gradient-to-r 
+    from-yellow-200 to-lime-600
+    dark:from-pink-200 dark:to-purple-700 
+    bg-clip-text text-transparent">
+    {{ heading.header }}
   </h1>
 </template>
 
 <script setup>
-defineProps({
-  content: {
-    type: Array,
+import { ref } from "vue";
+const props = defineProps({
+  heading: {
+    type: Object,
     required: true,
   },
-});
+})
+const avatar = ref("https://imagedelivery.net/jUv0WjkQAcJxE0kRYIap3Q/7f23edde-534b-4a88-8642-55fc9880e300/public")
 </script>

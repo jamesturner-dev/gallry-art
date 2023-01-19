@@ -1,12 +1,29 @@
 <template>
   <div class="space-y-10">
-    <GalleryLoop :gallery="gallery" />
-    {{ galleryImages.items }}
+    <ul role="list" class="mx-auto grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-4 md:gap-x-4 lg:gap-x-6 lg:gap-y-10 xl:grid-cols-6">
+    
+    <li v-for="g in galleryImages" :key="g._id">
+      <a href="#" class="space-y-4 space-x-2 rounded-md block  pt-2">
+        <img class="h-20 w-20 ml-2 rounded-md lg:h-24 lg:w-24" :src="g.url" :alt=g.title />
+        <div
+          class="bg-fuchsia-600 dark:bg-purple-600 rounded-md p-2 bg-opacity-25 dark:bg-opacity-25 text-purple-200 hover:text-white">
+          <h3 class="titleGallry border-b-2 border-b-fuchsia-400 border-opacity-30">
+            {{ g.title }}
+          </h3>
+          <p class="tinyText text-purple-200 dark:text-white pr-3 pt-1">
+            {{ g.description }}
+          </p>
+        </div>
+      </a>
+    </li>
+
+  </ul>
+    <!-- {{ galleryImages}} -->
   </div>
 </template>
 
 <script setup>
-import GalleryLoop from "./GalleryLoop.vue";
+// import GalleryLoop from "./GalleryLoop.vue";
 import { ref, onMounted } from "vue";
 
 const props = defineProps({
@@ -16,11 +33,15 @@ const props = defineProps({
   },
 });
 
+
 const galleryImages = ref({})
 
 const getGalleryImages = async () => {
   try {
-    console.log ('getting gallery images - use fetch!!!')
+    const response = await fetch(`http://localhost:5000/api/v1/images/?category=${props.id}`);
+    const data = await response.json();
+    console.log(data.data)
+    galleryImages.value = data.data;
   } catch (err) {
     console.log(err);
   }

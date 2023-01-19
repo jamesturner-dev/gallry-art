@@ -4,7 +4,7 @@ import HomePage from "../views/HomePage.vue";
 // import Tags from "../views/TagView.vue";
 import NotFound from "../views/NotFound.vue";
 import GalleryView from "../views/GalleryView.vue";
-// import Page from "../views/PageView.vue";
+import Page from "../views/PageView.vue";
 // import SearchResults from "../views/SearchResults.vue";
 // import SuggestLink from "../views/SuggestLink.vue";
 
@@ -19,11 +19,11 @@ const routes = [
   //   name: "Admin",
   //   component: Admin,
   // },
-  // {
-  //   path: "/page/:name",
-  //   name: "Page",
-  //   component: Page,
-  // },
+  {
+    path: "/page/:name",
+    name: "Page",
+    component: Page,
+  },
   // {
   //   path: "/cat/:name",
   //   name: "Category",

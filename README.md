@@ -11,8 +11,6 @@
 Trying to whip up a batch file to start both the client and server at the same time. 
 
 
-
-
 ```
 
  `npm install`

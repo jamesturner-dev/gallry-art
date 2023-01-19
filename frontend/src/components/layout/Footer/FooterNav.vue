@@ -1,17 +1,14 @@
 <template>
-  <div class="p-5 pb-0 border-t border-gray-300 md:flex md:items-center md:justify-between">
+  <div class="footerNav md:flex md:items-center md:justify-between">
     <div class="flex space-x-6 md:order-2">
-      <a v-for="item in social" :key="item.name" :href="item.href" class="text-gray-400 hover:text-gray-500">
+      <a v-for="item in social" :key="item.name" :href="item.href">
         <span class="sr-only">{{ item.name }}</span>
         <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
       </a>
     </div>
-    <p class="mt-8 text-sm text-gray-500 md:mt-0 md:order-1 pt-2">
+    <p class="mt-8 text-sm md:mt-0 md:order-1 pt-2">
       &copy; 2022
-      <a class="text-sky-500" href="https://cv.jamesturner.dev/">
-        JamesTurnerDev
-      </a>
-      - Some rights reserved.
+      <a href="https://cv.jamesturner.dev/">JamesTurnerDev</a> - Some rights reserved.
     </p>
   </div>
 </template>

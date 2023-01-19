@@ -1,6 +1,6 @@
 <template>
   <div class="mt-10 space-y-12">
-    <ContentHeading :content="content" />
+    <ContentHeading :heading="header" />
     <GalleriesLoop :galleries="galleries" />
   </div>
 </template>
@@ -82,8 +82,11 @@ const galleries = [
       'https://imagedelivery.net/jUv0WjkQAcJxE0kRYIap3Q/cb1221de-1b65-4c3d-0745-d178aeb24f00/public',
   },
 ]
-const content = [
-  "The Galleries",
-  "AI-generated images can be quite surreal and otherworldly. When left to their own devices, algorithms can create some pretty bizarre stuff.But that's part of the fun of AI-generated images - you never quite know what you're going to get.",
-];
+
+
+const header = 
+  {
+    header: "The Galleries",
+    subHeader: "AI-generated images can be quite surreal and otherworldly. When left to their own devices, algorithms can create some pretty bizarre stuff.But that's part of the fun of AI-generated images - you never quite know what you're going to get.",
+  }
 </script>

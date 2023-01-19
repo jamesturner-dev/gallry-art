@@ -1,6 +1,6 @@
 <template>
   <div class="relative overflow-hidden py-5">
-    <PageHeader :content="content" />
+    <PageHeader :heading="header" />
     <HelpQuestions />
   </div>
 </template>
@@ -8,9 +8,11 @@
 <script setup>
 import HelpQuestions from './HelpQuestions.vue';
 import PageHeader from './PageHeader.vue';
-const content = [
-  "Click on the question to reveal the answer", 
-  "cb.link Help Page"
-];
+
+const header = 
+  {
+    header: "What's This Then?",
+    subHeader: "Gallry.Art is a free image gallery based on Node and Vue.",
+  }
 </script>
 

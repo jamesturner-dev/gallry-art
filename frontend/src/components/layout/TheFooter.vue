@@ -1,5 +1,5 @@
 <template>
-  <footer class="mt-5" aria-labelledby="footer-heading">
+  <footer class="mt-5 ml-5" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <aside class="sectionContain">
       <FooterLinks />

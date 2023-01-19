@@ -1,16 +1,16 @@
 <template>
-  <div class="ml-5">
-    <h3 class="text-sm font-medium text-gray-400">
+  <section>
+    <h4>
       <a href="https://headlin3s.com">Headlin3s News:</a>
-    </h3>
+    </h4>
     <ul role="list" class="mt-4 space-y-4">
       <li v-for="item in categories" :key="item.name">
-        <a :href="item.href" class="px-2 text-sm">
+        <a :href="item.href" class="footerLinks">
           {{ item.name }}
         </a>
       </li>
     </ul>
-  </div>
+  </section>
 </template>
 
 <script setup>
