@@ -1,7 +1,7 @@
 <template>
   <section>
     <Header />
-    <main class="mt-10 sectionContain">
+    <main class="sectionContain">
       <router-view />
     </main>
     <Footer />

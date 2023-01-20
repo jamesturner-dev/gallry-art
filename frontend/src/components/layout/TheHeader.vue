@@ -6,7 +6,8 @@
           <!-- Leave in-case of logo -->
           <div>
             <a href="/">
-              <h1 class="titleText bg-gradient-to-r from-lime-200 to-yellow-400 dark:from-yellow-200 dark:to-lime-400">
+              <h1 id="titleText"
+                class="bg-gradient-to-r from-lime-200 to-yellow-400 dark:from-yellow-200 dark:to-lime-400">
                 Gallry.Art
               </h1>
             </a>
