@@ -13,9 +13,9 @@
 
 <script setup>
 const categories =  [
-    { name: "Technology", href: "/cat/technology" },
-    { name: "News Services", href: "/cat/news" },
-    { name: "Online Services", href: "/cat/services" },
+    { name: "People", href: "/cat/people" },
+    { name: "Politics", href: "/cat/politics" },
+    { name: "Art", href: "/cat/art" },
     { name: "Podcasts", href: "/cat/podcast" },
   ];
 </script>

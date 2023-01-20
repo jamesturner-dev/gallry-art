@@ -1,7 +1,7 @@
 <template>
-  <div class="space-y-10">
+  <section>
     <GalleryLoop :gallery="gallery" />
-  </div>
+  </section>
 </template>
 
 <script setup>
@@ -29,7 +29,7 @@ const getGallery = async () => {
 
 onMounted(async () => {
   await getGallery().then(() => {
-    console.log('done');
+    console.log('getting the gallery...');
   });
 });
 

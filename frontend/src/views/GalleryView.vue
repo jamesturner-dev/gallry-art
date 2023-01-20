@@ -45,7 +45,6 @@ onMounted(async () => {
 
   await getGallery().then(() => {
     console.log('Get Gallery from Gallery View done');
-    console.log(header);
   });
 });
 
