@@ -6,11 +6,11 @@ const getCount = require("../utils/getCount");
 
 // ** @desc   Get all images
 // ** @route  GET /api/v1/images
-// ** @route  GET /api/v1/directories/:imageId/images
+// ** @route  GET /api/v1/gallery/:galleryId/images
 // ** @access Public
 exports.getImages = asyncHandler(async (req, res, next) => {
-  if (req.params.imageId) {
-    const images = await Image.find({ gallery: req.params.imageId });
+  if (req.params.galleryId) {
+    const images = await Image.find({ gallery: req.params.galleryId });
     return res.status(200).json({
       success: true,
       count: images.length,
