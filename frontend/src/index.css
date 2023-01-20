@@ -245,7 +245,7 @@ p .pageWrapper {
   border: none;
   outline: none;
   color: var(--notWhite);
-  background: rgba(157, 38, 175, .3);
+  background: rgba(157, 38, 175, .1);
   cursor: pointer;
   position: relative;
   z-index: 0;
