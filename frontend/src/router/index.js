@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
 import HomePage from "../views/HomePage.vue";
-// import Category from "../views/CategoryView.vue";
+import Category from "../views/CategoryView.vue";
 // import Tags from "../views/TagView.vue";
 import NotFound from "../views/NotFound.vue";
 import GalleryView from "../views/GalleryView.vue";
@@ -24,11 +24,11 @@ const routes = [
     name: "Page",
     component: Page,
   },
-  // {
-  //   path: "/cat/:name",
-  //   name: "Category",
-  //   component: Category,
-  // },
+  {
+    path: "/cat/:name",
+    name: "Category",
+    component: Category,
+  },
   // {
   //   path: "/tag/:name",
   //   name: "Tags",

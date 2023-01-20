@@ -13,12 +13,13 @@
           <p class="tinyText text-purple-200 dark:text-white pr-3 pt-1">
             {{ g.description }}
           </p>
+          <!-- <span class="text-xs">{{ g.url }}</span> -->
         </div>
       </a>
     </li>
 
   </ul>
-    <!-- {{ galleryImages}} -->
+    {{ galleryImages}}
   </div>
 </template>
 
