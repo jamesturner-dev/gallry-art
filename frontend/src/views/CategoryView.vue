@@ -13,13 +13,9 @@ import ContentHeading from "../components/shared/ContentHeading.vue";
 import { useRoute } from "vue-router";
 const route = useRoute(); // <--- this is the magic line
 const catRoute = route.params.name; // (it is reactive)
-
-console.log(route.params.id)
-
 const header =
   {
     header: catRoute,
     subHeader: `This is the ${catRoute} page`,
   }
-
 </script>

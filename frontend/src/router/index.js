@@ -7,6 +7,7 @@ import GalleryView from "../views/GalleryView.vue";
 import Page from "../views/PageView.vue";
 // import SearchResults from "../views/SearchResults.vue";
 // import SuggestLink from "../views/SuggestLink.vue";
+import UserView from "../views/UserView.vue";
 
 const routes = [
   {
@@ -28,6 +29,11 @@ const routes = [
     path: "/cat/:name",
     name: "Category",
     component: Category,
+  },
+  {
+    path: "/user/:name",
+    name: "UserView",
+    component: UserView,
   },
   // {
   //   path: "/tag/:name",
