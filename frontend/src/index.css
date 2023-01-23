@@ -330,3 +330,15 @@ p .pageWrapper {
 .footerNav a:hover{
   color: var(--yeller);
 }
+
+body.swal2-shown > [aria-hidden="true"] {
+  transition: 0.1s filter;
+  filter: blur(10px);
+}
+
+.swal2-popup{
+  padding: 0 1.5rem 1.5rem 1.5rem!important;
+  background: rgba(157, 38, 175, .25)!important;
+}
+
+

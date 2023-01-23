@@ -6,20 +6,11 @@ const path = require("path");
 // ** @desc   Get 10 galleries
 // ** @route  GET /api/v1/galleries
 // ** @access Public
+
 exports.getGalleries = asyncHandler(async (req, res, next) => {
   res.status(200).json(res.advancedResults);
-    let galleries = await Gallery.findMany().limit(10);
-
-    if (!galleries) {
-        return next(new ErrorResponse("Gallery is required", 400));
-    }
-
-    res.status(200).json({
-        success: true,
-        data: galleries,
-    });
-      
 });
+
 
 // ** @desc   Get single gallery
 // ** @route  GET /api/v1/galleries/:id
