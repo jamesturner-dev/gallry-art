@@ -1,6 +1,6 @@
 <template>
   <div class="mainFlex">
-    <div class="w-full max-w-md space-y-4">
+    <div class="w-full max-w-xl space-y-4">
       <section v-if="pageName == 'login'">
         <UserLogin />
       </section>

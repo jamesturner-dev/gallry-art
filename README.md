@@ -26,3 +26,8 @@ Change into both directories and run the following commands in each, in a differ
 `npm run dev`
 
 ```
+
+## To Do:
+- [ ] Update the user components to script setup
+- [ ] Update the user components to use the new composition API
+- [ ] Create bash script to run both servers at once

@@ -2,10 +2,10 @@
   <div class="flex min-h-full items-center justify-center px-5">
     <div class="w-full max-w-md space-y-5">
 
-      <h2 class="theHeading">Forgot your password?</h2>
-      <p class="more">
+      <h1 class="text-pink-500">Forgot your password?</h1>
+      <p class="text-white">
         Enter your email to reset your password or
-        <a href="/user/register" class="text-sky-400">
+        <a href="/user/register" class="primaryText">
           sign up if you are a new user.
         </a>
       </p>
@@ -14,10 +14,10 @@
         <div class="-space-y-px rounded-md shadow-sm">
           <label for="email-address" class="sr-only">Email address</label>
           <input id="email-address" v-model="email" name="email" type="email" autocomplete="email" required=""
-            class="formInput focus:z-10 focus:border-sky-500"
+            class="formInput focus:border-pink-500"
             placeholder="Email address" />
         </div>
-        <button @click="login" type="submit" class="primary w-full" aria-label="Sign In">
+        <button @click="login" type="submit" class="mt-2 bigButton titleText button-85 focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2" aria-label="Sign In">
           Sign in
         </button>
       </form>
