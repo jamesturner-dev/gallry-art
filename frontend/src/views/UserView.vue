@@ -17,7 +17,7 @@
 <script>
 import UserLogin from "../components/user/UserLogin.vue";
 import UserRegister from "../components/user/UserRegister.vue";
-import ForgotPassword from "../components/user/ForgotPassword.vue";
+import ForgotPassword from "../components/user/shared/ForgotPassword.vue";
 
 export default {
   data: function () {

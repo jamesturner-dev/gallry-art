@@ -43,7 +43,7 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-import MemberLink from "./MemberLink.vue";
+import MemberLink from "./shared/MemberLink.vue";
 import Swal from "sweetalert2";
 const name = ref("");
 const email = ref("");
@@ -115,9 +115,9 @@ const register = async () => {
   }
 }
 
-
 onMounted(async () => {
   // reckon I should check if the user is already logged in here?
+  // alsao this file is large, should I split it up?
   console.log('this is where we do the sign up...');
 });
 

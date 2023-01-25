@@ -41,8 +41,8 @@
 </template>
 
 <script>
-import MemberLink from './MemberLink.vue';
-import RememberMe from './RememberMe.vue';
+import MemberLink from './shared/MemberLink.vue';
+import RememberMe from './shared/RememberMe.vue';
 import PageHeader from "../page/PageHeader.vue";
 
 export default {
@@ -60,7 +60,7 @@ export default {
   },
  
   components: { MemberLink, RememberMe, PageHeader },
-  mounted() { },
+
   methods: {
     async login() {
       const requestOptions = {
@@ -80,7 +80,7 @@ export default {
       this.token = data.token;
 
       if (this.token) {
-        this.$router.push({ name: "Home" });
+        this.$router.push({ name: "HomePage" });
       }
     },
   },

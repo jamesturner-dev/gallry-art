@@ -31,3 +31,5 @@ Change into both directories and run the following commands in each, in a differ
 - [ ] Update the user components to script setup
 - [ ] Update the user components to use the new composition API
 - [ ] Create bash script to run both servers at once
+- [ ] Create end point for suggest end point instead of the form keep cop out :)
+- [ ] Publish results of image tests from different providers

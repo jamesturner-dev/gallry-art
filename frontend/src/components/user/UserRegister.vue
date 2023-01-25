@@ -8,8 +8,6 @@
 <script setup>
 import PageHeader from "../page/PageHeader.vue";
 import RegisterForm from "./RegisterForm.vue";
-
-const errors = []
 const freeSpotsRemaing = 13
 const content = {
   header: "New User Sign Up",
