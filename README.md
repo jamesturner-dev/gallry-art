@@ -1,6 +1,8 @@
 # Gallry.art
 #### v0.0.1
+### This Repo holds the front end and back end for the Gallry.art project
 
+### Tech Stack
 - **Vite:** v2.x
 - **Vue.js:** v3.x
 - **tailwindcss:** v3.x
@@ -33,3 +35,5 @@ Change into both directories and run the following commands in each, in a differ
 - [ ] Create bash script to run both servers at once
 - [ ] Create end point for suggest end point instead of the form keep cop out :)
 - [ ] Publish results of image tests from different providers
+- [ ] Create a LICENSE.md
+- [ ] Create Admin Panel
