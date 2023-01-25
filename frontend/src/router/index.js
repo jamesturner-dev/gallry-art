@@ -6,7 +6,7 @@ import NotFound from "../views/NotFound.vue";
 import GalleryView from "../views/GalleryView.vue";
 import Page from "../views/PageView.vue";
 // import SearchResults from "../views/SearchResults.vue";
-// import SuggestLink from "../views/SuggestLink.vue";
+import SuggestImage from "../views/SuggestImage.vue";
 import UserView from "../views/UserView.vue";
 
 const routes = [
@@ -50,11 +50,11 @@ const routes = [
   //   name: "SearchResults",
   //   component: SearchResults,
   // },
-  // {
-  //   path: "/suggest",
-  //   name: "SuggestLink",
-  //   component: SuggestLink,
-  // },
+  {
+    path: "/suggest",
+    name: "SuggestImage",
+    component: SuggestImage,
+  },
   {
     path: "/:catchAll(.*)",
     component: NotFound,

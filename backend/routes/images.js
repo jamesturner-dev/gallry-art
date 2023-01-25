@@ -6,7 +6,6 @@ const {
   addImage,
   updateImage,
   deleteImage,
-  getImageById,
 } = require("../controllers/images");
 
 const Image = require("../models/Image");
@@ -30,6 +29,5 @@ router
   .get(getImage)
   .put(protect, authorize("publisher", "admin"), updateImage)
   .delete(protect, authorize("publisher", "admin"), deleteImage);
-
 
 module.exports = router;
