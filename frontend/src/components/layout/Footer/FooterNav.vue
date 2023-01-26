@@ -7,8 +7,9 @@
       </a>
     </div>
     <p class="mt-8 text-sm md:mt-0 md:order-1 pt-2">
-      &copy; 2023
-      <a href="https://cv.jamesturner.dev/">JamesTurnerDev</a> - Some rights reserved.
+      &copy; 2023 <a href="https://jamesturner.dev/">
+        JamesTurnerDev
+      </a> - Some rights reserved.
     </p>
   </div>
 </template>
