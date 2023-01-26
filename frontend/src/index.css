@@ -323,6 +323,30 @@ p .pageWrapper {
   color: var(--white);
 }
 
+.tag{
+  display: inline-block;
+  background-color: rgba(107, 33, 168, .6);
+  font-size: 0.69rem;
+  line-height: .9rem;
+  padding: 0.125rem 0.5rem;
+  padding-bottom: 0.25rem;
+  margin-right: 0.33rem;
+  border-radius: 9999px;
+  color: var(--notWhite);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.dark .tag {
+  background-color: rgba(219, 39, 119, .6);
+
+}
+
+.tag:hover {
+  background-color: var(--purp);
+  color: var(--white);
+}
+
 .button-85:hover {
   color: var(--yeller);
   border-radius: 12px !important;

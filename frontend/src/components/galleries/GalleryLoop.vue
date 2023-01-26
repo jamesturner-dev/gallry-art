@@ -11,13 +11,16 @@
             {{ g.description }}
           </p>
         </div>
+        <LinkTags :tags="g.tags" />
       </a>
     </li>
   </ul>
+  <!-- {{ gallery }} -->
 </template>
 
 <script setup>
 import swal from "sweetalert2";
+import LinkTags from "../shared/TheTags.vue";
 defineProps({
   gallery: {
     type: Object,
