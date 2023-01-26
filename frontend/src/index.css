@@ -347,6 +347,38 @@ p .pageWrapper {
   color: var(--white);
 }
 
+.disclosure {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  background-color: rgba(219, 39, 119, .5);
+  color: var(--notWhite);
+  font-size: 0.875rem/* 14px */;
+  line-height: 1.25rem/* 20px */;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.dark .disclosure {
+  background-color: rgba(88, 28, 135, .5);
+  color: var(--notWhite);
+}
+
+.disclosure:hover {
+  background-color: var(--purp);
+  color: var(--white);
+}
+
+.panel {
+  padding: 1.25rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem/* 14px */;
+  line-height: 1.25rem/* 20px */;
+  color: var(--notWhite)
+}
+
 .button-85:hover {
   color: var(--yeller);
   border-radius: 12px !important;

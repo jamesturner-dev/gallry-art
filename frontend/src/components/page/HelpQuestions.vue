@@ -1,15 +1,13 @@
 <template>
   <div class="w-full">
     <div class="mx-auto w-full max-w-lg rounded-2xl my-10 p-2">
-
       <Disclosure v-slot="{ open }" v-for="h in help" :key="h.id">
-        <DisclosureButton
-          class="flex w-full justify-between rounded-lg bg-pink-600 text-pink-100 dark:bg-purple-900 dark:text-purple-100 dark:hover:text-black mb-1 px-4 py-2 text-left text-sm font-medium hover:bg-purple-700 dark:hover:bg-pink-500">
+        <DisclosureButton class="disclosure">
           <span> {{ h.question }} </span>
           <ChevronUpIcon :class="open ? 'rotate-180 transform' : ''"
             class="h-5 w-5 text-purple-700" />
         </DisclosureButton>
-        <DisclosurePanel class="p-5 pb-2 text-sm text-gray-200">
+        <DisclosurePanel class="panel">
           <p v-html="h.answer" class="mb-5"> </p>
         </DisclosurePanel>
       </Disclosure>
