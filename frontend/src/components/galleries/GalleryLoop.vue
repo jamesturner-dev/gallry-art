@@ -15,7 +15,6 @@
       </a>
     </li>
   </ul>
-  <!-- {{ gallery }} -->
 </template>
 
 <script setup>
@@ -28,7 +27,6 @@ defineProps({
   },
 });
 
-
 const showImage = (url) => {
   swal.fire({
     
@@ -37,5 +35,4 @@ const showImage = (url) => {
     imageAlt: "Custom image",
   });
 };
-
 </script>
