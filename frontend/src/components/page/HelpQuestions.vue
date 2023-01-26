@@ -28,7 +28,7 @@ const help = [
   {
     id: 1,
     question: "Can I get this code?",
-    answer: "Oh yeah, it is all on <a href='https://github.com/jamesturner-dev/front-end.us' class='text-pink-400 hover:text-purple-400'>Github</a>. Feel free to fork it and make it your own or make your improvements and submit a pull request."
+    answer: "Oh yeah, it is all on <a href='https://github.com/jamesturner-dev/gallry-art' class='text-pink-400 hover:text-purple-400'>Github</a>. Feel free to fork it and make it your own or make your improvements and submit a pull request."
   },
   {
     id: 2,
@@ -38,12 +38,12 @@ const help = [
   {
     id: 3,
     question: "Do you only do front-end?",
-    answer: "No, I'm full stack and gernally use Node, Express, and Mongo DB on the backend. I have been doing front-end longer and am much more fluent in it, but I can do both. I also have Python and Go experience."
+    answer: "No, I'm full stack.  This site's backend uses Node, Express, and Mongo DB. I have been doing front-end longer and am much more fluent in it, but I can do both. I also have Python and Go experience."
   },
   {
     id: 4,
-    question: "Is this template Finished?",
-    answer: "Honestly probabley not :) I'm always adding new features and fixing bugs. I'm also trying to hit a deadline to post this as a resume."
+    question: "Is this site Finished?",
+    answer: "No way :) I'm always adding new features and fixing bugs."
   },
   {
     id: 5,
@@ -59,11 +59,6 @@ const help = [
     id: 7,
     question: "Are you on social media?",
     answer: "Just Twitter - <a href='https://twitter.com/JamesTurnerDev' class='text-pink-400 hover:text-purple-400'>@JamesTurnerDev</a>"
-  },
-  {
-    id: 8,
-    question: "Can I use this for my own site?",
-    answer: "Sure.  The idea is that this is just a jumping off point, and of course you will need to be able to use Vue, clone a repository, etc. but feel free to use it for your own site."
   }
 ]; 
 </script>
