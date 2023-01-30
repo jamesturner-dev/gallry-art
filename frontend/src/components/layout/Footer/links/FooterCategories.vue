@@ -15,7 +15,7 @@
 const categories =  [
     { name: "People", href: "/cat/people" },
     { name: "Politics", href: "/cat/politics" },
-    { name: "Art", href: "/cat/art" },
-    { name: "Podcasts", href: "/cat/podcast" },
+    { name: "Merica", href: "/tag/merica" },
+    { name: "Lady", href: "/tag/lady" },
   ];
 </script>

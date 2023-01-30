@@ -1,11 +1,11 @@
 const ErrorResponse = require("../utils/errorResponse");
 const asyncHandler = require("../middleware/async");
-const Link = require("../models/Image");
+const Image = require("../models/Image");
 
-// ** @desc   Search all links
+// ** @desc   Search all images
 // ** @route  POST /api/v1/search
 // ** @access Public
-exports.searchLinks = asyncHandler(async (req, res, next) => {
+exports.searchImages = asyncHandler(async (req, res, next) => {
   var { searchTerm } = req.body;
 
   if (searchTerm) {
@@ -20,9 +20,9 @@ exports.searchLinks = asyncHandler(async (req, res, next) => {
 
     console.log(searchTerm);
 
-    const links = [];
+    const images = [];
 
-    Link.find({ $text: { $search: searchTerm } }).limit(10).exec(function (err, results) {
+    Image.find({ $text: { $search: searchTerm } }).limit(10).exec(function (err, results) {
       return res.status(200).json({
         success: true,
         count: results.length,

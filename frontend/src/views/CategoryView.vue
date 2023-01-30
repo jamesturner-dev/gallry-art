@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import TheCategory from "../components/galleries/TheCategory.vue";
+import TheCategory from "../components/shared/TheCategory.vue";
 import ContentHeading from "../components/shared/ContentHeading.vue";
 import { useRoute } from "vue-router";
 const route = useRoute(); // <--- this is the magic line

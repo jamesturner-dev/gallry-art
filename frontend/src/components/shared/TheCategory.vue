@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import GalleryLoop from "./GalleryLoop.vue";
+import GalleryLoop from "../galleries/GalleryLoop.vue";
 import { ref, onMounted } from "vue";
 
 const props = defineProps({

@@ -7,7 +7,7 @@
           <div>
             <a href="/">
               <h1 id="titleText"
-                class="bg-gradient-to-r from-lime-200 to-yellow-400 dark:from-yellow-200 dark:to-lime-400">
+                class="bg-gradient-to-r from-lime-200 to-yellow-400 dark:from-pink-200 dark:to-purple-400">
                 Gallry.Art
               </h1>
             </a>

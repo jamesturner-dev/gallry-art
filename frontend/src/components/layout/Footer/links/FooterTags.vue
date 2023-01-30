@@ -15,9 +15,9 @@
 
 <script setup>
 const categories = [
-  { name: "GOP Clones", href: "http://localhost:3000/gallery/6393dd7c808ecbae77fe9f24" },
-  { name: "Ai Women", href: "http://localhost:3000/gallery/63c9b18c9eea8cb2a0e86ad5" },
-  { name: "Donald Trump", href: "http://localhost:3000/gallery/63ca95989eea8cb2a0e86b6e" },
-  { name: "Mermaids", href: "http://localhost:3000/gallery/6393734ceeb01a6d62e44354" },
+  { name: "GOP Bots", href: "http://localhost:3000/gallery/63cb3461a2cb24d5d1310790" },
+  { name: "Hillary Clinton", href: "http://localhost:3000/gallery/63cd7305a2cb24d5d131092b" },
+  { name: "Horror", href: "http://localhost:3000/gallery/63ce9f6da2cb24d5d1310a71" },
+  { name: "Mermaids", href: "http://localhost:3000/gallery/63cadcdda2cb24d5d13106b1" },
 ];
 </script>

@@ -1,9 +1,9 @@
 const express = require("express");
 
-const { searchLinks } = require("../controllers/search");
+const { searchImages } = require("../controllers/search");
 
 const router = express.Router({ mergeParams: true });
 
-router.route("/").post(searchLinks);
+router.route("/").post(searchImages);
 
 module.exports = router;
