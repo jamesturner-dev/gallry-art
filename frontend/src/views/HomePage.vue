@@ -3,6 +3,7 @@
     <img class="h-20 pt-2 mr-2 mx-auto hidden md:flex" :src="avatar" />
     <div class="ml-1">
       <ContentHeading :heading="header" />
+      <SearchForm />
       <BigButtons />
       <TheGalleries />
     </div>
@@ -14,6 +15,7 @@ import { ref } from "vue";
 import BigButtons from "../components/shared/BigButtons.vue";
 import ContentHeading from "../components/shared/ContentHeading.vue";
 import TheGalleries from "../components/galleries/TheGalleries.vue";
+import SearchForm from "../components/shared/SearchForm.vue";
 const avatar = ref("https://imagedelivery.net/jUv0WjkQAcJxE0kRYIap3Q/794827e6-86ba-4863-23eb-bbfdf688f200/public");
 const header =
 {

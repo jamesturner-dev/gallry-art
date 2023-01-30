@@ -32,6 +32,7 @@
   --ernge: rgb(255, 115, 0);
   --red-hover: rgb(149, 38, 130);
   --secondary: rgb(229, 156, 226, .9);
+  --tertiary: rgb(229, 156, 226, .33);
   --black: rgb(0, 0, 0);
   --not-black: rgb(20, 20, 20);
   --darker-gray: rgb(33, 33, 33);
@@ -155,7 +156,7 @@ h1.pageHeader {
 
 .sectionContain {
   margin: 1rem;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 
 p.tinyText,
@@ -518,4 +519,31 @@ body.swal2-shown>[aria-hidden="true"] {
   color: var(--light-gray);
   background-color: var(--rose);
   border-color: var(--pink);
+}
+
+#searchBox{
+  max-width: 25rem;
+  display: flex;
+  height: 2.5rem;
+  background-color: var(--tertiary);
+  border-radius: 1rem;
+}
+
+#searchField{
+  background-color: rgba(240, 248, 255,.75);
+}
+
+#searchField:focus{
+  background-color: rgba(240, 248, 255,1);
+  color:#400772;
+}
+
+.searchIcon{
+  position: absolute;
+  display: flex;
+  pointer-events: none;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left:0.5rem;
 }

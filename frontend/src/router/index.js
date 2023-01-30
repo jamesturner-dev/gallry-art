@@ -5,7 +5,7 @@ import Tags from "../views/TagView.vue";
 import NotFound from "../views/NotFound.vue";
 import GalleryView from "../views/GalleryView.vue";
 import Page from "../views/PageView.vue";
-// import SearchResults from "../views/SearchResults.vue";
+import SearchResults from "../views/SearchResults.vue";
 import SuggestImage from "../views/SuggestImage.vue";
 import UserView from "../views/UserView.vue";
 
@@ -45,11 +45,11 @@ const routes = [
     name: "GalleryView",
     component: GalleryView,
   },
-  // {
-  //   path: "/search/:searchTerm",
-  //   name: "SearchResults",
-  //   component: SearchResults,
-  // },
+  {
+    path: "/search/:searchTerm",
+    name: "SearchResults",
+    component: SearchResults,
+  },
   {
     path: "/suggest",
     name: "SuggestImage",
