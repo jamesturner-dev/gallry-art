@@ -4,8 +4,9 @@ const Counter = require("../models/Counter");
 
 // ! These are convience functions to get the count of various things in the system
 // ! I've done similar my entire career but always thought it was hacky.
-// ! Especially with NoSQL it works well and is very fast.
+// ! Then it turns out with Mongo, hey you can do it like this...
 // TODO: That being said, lets fix the findby to use the labels.
+// TODO: Get rid of the hard coded ids and use the labels.
 
 // ** @desc   Get image count
 // ** @route  GET /api/v1/count

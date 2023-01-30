@@ -177,6 +177,8 @@ p .pageWrapper {
 }
 
 .titleGallry {
+  display: block;
+  padding: .5rem 0 .25rem .5rem;
   font-size: .75rem !important;
   font-family: Syncopate-Bold;
   letter-spacing: -0.025em;
@@ -187,6 +189,10 @@ p .pageWrapper {
 
 .dark .titleGallry {
   color: var(--yeller-hover) !important;
+}
+
+.titleGallry:hover {
+  color: var(--yeller) !important;
 }
 
 .galleryLink{

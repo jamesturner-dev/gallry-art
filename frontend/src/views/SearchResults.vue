@@ -39,6 +39,11 @@ const getSearchedLinks = async () => {
   const data = await response.json();
 
   if (data.count != 0) {
+
+    data.data.forEach(e => {
+      e.publicRating = e.clicks + e.rating;
+    });
+
     const _lyst = data.data;
     _lyst.forEach((item) => {
       returnedImages.value.push(item);

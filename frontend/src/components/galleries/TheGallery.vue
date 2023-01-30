@@ -21,6 +21,9 @@ const getGallery = async () => {
   try {
     const response = await fetch(`http://localhost:5000/api/v1/gallery/${props.id}/images`);
     const data = await response.json();
+    data.data.forEach(e => {
+      e.publicRating = e.clicks + e.rating;
+    });
     gallery.value = data.data;
   } catch (err) {
     console.log(err);
