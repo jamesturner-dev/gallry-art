@@ -9,6 +9,10 @@ exports.searchImages = asyncHandler(async (req, res, next) => {
   var { searchTerm } = req.body;
 
   if (searchTerm) {
+    searchTerm = searchTerm.trim();
+    searchTerm = searchTerm.replace(/[^a-zA-Z0-9 ]/g, "");
+
+    console.log(searchTerm)
 
     const stopWords = [
       'and', 'or', 'this', 'fuck', 'the', "if", "find", "that",
@@ -19,8 +23,6 @@ exports.searchImages = asyncHandler(async (req, res, next) => {
     searchTerm = searchTerm.replace(new RegExp('\\b('+stopWords.join('|')+')\\b', 'g'), '');
 
     console.log(searchTerm);
-
-    const images = [];
 
     Image.find({ $text: { $search: searchTerm } }).limit(10).exec(function (err, results) {
       return res.status(200).json({
