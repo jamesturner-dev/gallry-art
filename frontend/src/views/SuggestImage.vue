@@ -7,7 +7,7 @@
    enctype="multipart/form-data"
    method="POST">
    
-    <dl>
+    <dl class="max-w-5xl">
       <div class="grid grid-cols-3 gap-3 mt-10 pt-2">
         <dt class="pt-5 tinyText">URL:</dt>
         <dd class="flex text-sm sm:col-span-2 sm:mt-0">
@@ -59,7 +59,7 @@
       </div>
     </dl>
 
-    <div class="flex justify-end mb-10">
+    <div class="flex justify-end mb-10 max-w-5xl">
       <button type="submit"
       class="my-5 ml-2 bigButton titleText button-85 focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2">
       Suggest a Image for Gallery
