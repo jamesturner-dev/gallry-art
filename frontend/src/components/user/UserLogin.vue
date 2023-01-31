@@ -29,7 +29,7 @@
 
         <div>
           <button @click="login" type="submit" 
-          class="bigButton titleText button-85 focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2" aria-label="Login">
+          class="bigButton titleText rainbowButton focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2" aria-label="Login">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3">
             </span>
             Sign in

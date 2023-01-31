@@ -17,7 +17,7 @@
             class="formInput focus:border-pink-500"
             placeholder="Email address" />
         </div>
-        <button @click="login" type="submit" class="mt-2 bigButton titleText button-85 focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2" aria-label="Sign In">
+        <button @click="login" type="submit" class="mt-2 bigButton titleText rainbowButton focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2" aria-label="Sign In">
           Sign in
         </button>
       </form>

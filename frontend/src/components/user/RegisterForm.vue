@@ -33,7 +33,7 @@
     <MemberLink :login=false />
 
     <button @click="register" type="submit"
-      class="bigButton titleText button-85 focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2"
+      class="bigButton titleText rainbowButton focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2"
       aria-label="Register">
       Register
     </button>

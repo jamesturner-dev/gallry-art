@@ -7,9 +7,9 @@
    enctype="multipart/form-data"
    method="POST">
    
-    <dl class="max-w-4xl mx-auto">
-      <div class="grid grid-cols-3 gap-3 mt-10 pt-2">
-        <dt class="pt-5 tinyText">URL:</dt>
+    <dl class="max-w-4xl mx-auto mt-10">
+      <div class="grid grid-cols-3 gap-1 p-3 hover:bg-pink-100 hover:bg-opacity-10 rounded-md ">
+        <dt class="pt-4 text-white">URL:</dt>
         <dd class="flex text-sm sm:col-span-2 sm:mt-0">
           <span class="flex-grow">
             <input type="text" class="formInput" v-model="imageUrl" />
@@ -17,8 +17,8 @@
         </dd>
       </div>
 
-      <div class="grid grid-cols-3 gap-3 pt-2">
-        <dt class="mt-5 pt-2 tinyText">Title:</dt>
+      <div class="grid grid-cols-3 gap-1 p-3 hover:bg-pink-100 hover:bg-opacity-10 rounded-md ">
+        <dt class="pt-5 text-white">Title:</dt>
         <dd class="pt-3 flex text-xs sm:col-span-2 sm:mt-0">
           <span class="flex-grow">
             <input type="text" class="formInput" v-model="imageTitle" />
@@ -26,7 +26,7 @@
         </dd>
       </div>
 
-      <div class="grid grid-cols-3 gap-1 p-3 bg-pink-100 bg-opacity-10 rounded-md ">
+      <div class="grid grid-cols-3 gap-1 p-3 hover:bg-pink-100 hover:bg-opacity-10 rounded-md ">
         <dt class="pt-5 text-white">Description:</dt>
         <dd class="pt-5 flex text-sm sm:col-span-2 sm:mt-0">
           <span class="flex-grow">
@@ -35,8 +35,8 @@
         </dd>
       </div>
 
-      <div class="grid grid-cols-3 gap-3 pt-2">
-        <dt class="mt-5 pt-3 tinyText">Category:</dt>
+      <div class="grid grid-cols-3 gap-1 p-3 hover:bg-pink-100 hover:bg-opacity-10 rounded-md ">
+        <dt class="pt-5 text-white">Category:</dt>
         <dd class="pt-3 flex text-sm sm:col-span-2 sm:mt-0">
           <span class="flex-grow">
             <select id="selected-tab" name="selected-tab" v-model="currentCat"
@@ -49,8 +49,8 @@
         </dd>
       </div>
 
-      <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:py-5">
-        <dt class="pt-3 tinyText">Tags:</dt>
+      <div class="grid grid-cols-3 gap-1 p-3 hover:bg-pink-100 hover:bg-opacity-10 rounded-md ">
+        <dt class="pt-4 text-white">Tags:</dt>
         <dd class="flex text-sm sm:col-span-2 sm:mt-0">
           <span class="flex-grow">
             <input type="text" class="formInput" v-model="imageTags" />
@@ -61,7 +61,7 @@
 
     <div class="flex mx-auto justify-end mb-10 max-w-4xl">
       <button type="submit"
-      class="my-5 ml-2 bigButton titleText button-85 focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2">
+      class="my-5 ml-2 bigButton titleText rainbowButton focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2">
       Suggest a Image for Gallery
     </button>
     </div>
