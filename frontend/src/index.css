@@ -512,17 +512,18 @@ body.swal2-shown>[aria-hidden="true"] {
   position: relative;
   margin-bottom: 0.5rem;
   width: 100%;
-  border: 1px solid #dadbdc;
+  border: 2px solid var(--pink-hover);
   border-radius: 0.33rem;
   padding: .5rem .75rem;
   color: rgb(41, 41, 41);
-  background-color: rgb(255 255 255);
+  background-color: rgba(255, 255, 255, .8);
   z-index: 10;
 }
 
 .formInput:focus {
   outline: none;
-  border-color: rgb(168 85 247);
+  background-color: var(--white);
+  border-color: rgb(144, 66, 218);
 }
 
 .dark .formInput {

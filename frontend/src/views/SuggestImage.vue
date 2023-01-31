@@ -7,7 +7,7 @@
    enctype="multipart/form-data"
    method="POST">
    
-    <dl class="max-w-5xl">
+    <dl class="max-w-4xl mx-auto">
       <div class="grid grid-cols-3 gap-3 mt-10 pt-2">
         <dt class="pt-5 tinyText">URL:</dt>
         <dd class="flex text-sm sm:col-span-2 sm:mt-0">
@@ -26,8 +26,8 @@
         </dd>
       </div>
 
-      <div class="grid grid-cols-3 gap-3 pt-2">
-        <dt class="pt-10 tinyText">Description</dt>
+      <div class="grid grid-cols-3 gap-1 p-3 bg-pink-100 bg-opacity-10 rounded-md ">
+        <dt class="pt-5 text-white">Description:</dt>
         <dd class="pt-5 flex text-sm sm:col-span-2 sm:mt-0">
           <span class="flex-grow">
             <textarea rows="4" cols="50" class="formInput" v-model="imageDescription" />
@@ -59,7 +59,7 @@
       </div>
     </dl>
 
-    <div class="flex justify-end mb-10 max-w-5xl">
+    <div class="flex mx-auto justify-end mb-10 max-w-4xl">
       <button type="submit"
       class="my-5 ml-2 bigButton titleText button-85 focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2">
       Suggest a Image for Gallery

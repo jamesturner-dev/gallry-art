@@ -21,6 +21,7 @@ const auth = require("./routes/auth");
 const users = require("./routes/users");
 const count = require("./routes/count");
 const search = require("./routes/search");
+const vote = require("./routes/vote");
 
 const app = express();
 
@@ -55,6 +56,7 @@ app.use("/api/v1/auth", auth);
 app.use("/api/v1/users", users);
 app.use("/api/v1/count", count);
 app.use("/api/v1/search", search);
+app.use("/api/v1/vote", vote);
 
 app.use(errorHandler);
 
