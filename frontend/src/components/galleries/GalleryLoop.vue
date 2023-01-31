@@ -1,5 +1,5 @@
 <template>
-  <ul role="list" class="gallGrid sm:grid-cols-4 md:gap-x-4 lg:gap-x-6 lg:gap-y-10 xl:grid-cols-6">
+  <ul role="list" class="gallGrid sm:grid-cols-4 md:gap-x-4 lg:gap-x-6 lg:gap-y-8 xl:grid-cols-6">
     <li v-for="g in gallery" :key="g._id" class="galleryItem">
 
       <a @click="showImage(g.url)" class="galleryLink">
@@ -9,15 +9,12 @@
 
       <div class="galleryBlurb">
 
-        <p class="tinyText secondaryText">
-          {{ g.description }}
-        </p>
+        <p class="tinyText secondaryText"> {{ g.description }} </p>
 
         <section class="flex">
           <p v-if="g.publicRating" class="tinyText secondaryText flex-1">
             Rated: {{ g.publicRating }}
           </p>
-
           <span class="flex pt-1 pr-1">
             <ArrowUpCircleIcon @click="voteUp(g._id)" aria-hidden="true"
               class="flex-1 h-5 w-5 text-purple-400 hover:text-white dark:text-pink-300 dark:hover:text-white" />
