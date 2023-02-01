@@ -1,7 +1,7 @@
 {
-  "name": "cblink-backend",
-  "version": "0.0.5",
-  "description": "The cb.link backend",
+  "name": "gallary-art-backend",
+  "version": "0.0.8",
+  "description": "The Gallary.Art Backend",
   "main": "server.js",
   "scripts": {
     "start": "NODE_ENV=production node server",
