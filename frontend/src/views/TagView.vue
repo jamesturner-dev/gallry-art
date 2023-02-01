@@ -12,7 +12,7 @@ const route = useRoute(); // <--- this is the magic line
 const tagRoute = route.params.name; // (it is reactive)
 const tagLinks = ref([]);
 const tagUrl = `http://localhost:5000/api/v1/images/?tags=${tagRoute}`;
-// const tagUrl = 'http://localhost:5000/api/v1/images/?tags=lady'
+
 const getTagLinks = async () => {
   const response = await fetch(tagUrl);
   const data = await response.json();

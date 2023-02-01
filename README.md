@@ -29,6 +29,12 @@ Change into both directories and run the following commands in each, in a differ
 
 ```
 
+### Notes
+- The front end is served on port 3000
+- The back end is served on port 5000
+- The CSS is a mix of custom and tailwind, getting rid of Tailwind is on the to-do list
+
+
 ## To Do:
 - [ ] Update the user components to script setup
 - [ ] Update the user components to use the new composition API
@@ -37,3 +43,4 @@ Change into both directories and run the following commands in each, in a differ
 - [ ] Publish results of image tests from different providers
 - [ ] Create a LICENSE.md
 - [ ] Create Admin Panel
+- [ ] Move all css to custom away from tailwind
